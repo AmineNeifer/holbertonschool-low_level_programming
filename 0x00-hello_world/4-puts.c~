@@ -1,0 +1,3 @@
+#!/bin/bash
+puts("puts");
+return 0;
