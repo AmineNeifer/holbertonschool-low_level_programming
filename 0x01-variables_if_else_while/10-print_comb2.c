@@ -1,21 +1,27 @@
 #include <stdio.h>
 /**
- * main - entry block
- * @void: no argument
- * Return: 0 (Sucess)
- **/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 int n;
-for (n = '00'; n <= '99'; n++)
+int z;
+for (n = '0'; n <= '9'; n++)
 {
-putchar(x);
-if (n != '99')
+putchar(n);
+for (z = '0'; z <= '9'; z++)
+{
+putchar(z);
+if ((n != '9') & (z != '9'))
 {
 putchar(',');
 putchar(' ');
 }
 }
 putchar('\n');
+}
+}
 return (0);
 }
