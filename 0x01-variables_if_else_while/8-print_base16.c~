@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-int n;
-for (n = '0'; n <= '9'; n++)
+int ch = '0';
+char k = 'a';
+for (ch = '0'; ch <= '9'; ch++)
 {
-putchar(n);
-if (n != '9')
-{
-putchar(',');
-putchar(' ');
+putchar(ch);
 }
+for (k = 'a'; k <= 'f'; k++)
+{
+putchar(k);
 }
 putchar('\n');
 return (0);

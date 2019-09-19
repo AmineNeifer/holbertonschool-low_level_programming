@@ -6,22 +6,18 @@
  */
 int main(void)
 {
-int n;
-int z;
+int n, z;
 for (n = '0'; n <= '9'; n++)
-{
-putchar(n);
 for (z = '0'; z <= '9'; z++)
 {
+putchar(n);
 putchar(z);
-if ((n != '9') & (z != '9'))
+if (n != '9' || z != '9')
 {
 putchar(',');
 putchar(' ');
 }
 }
 putchar('\n');
-}
-}
 return (0);
 }

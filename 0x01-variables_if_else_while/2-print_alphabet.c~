@@ -6,16 +6,11 @@
  */
 int main(void)
 {
-int n;
-for (n = '0'; n <= '9'; n++)
+char ch = 'a';
+for (ch = 'a'; ch <= 'z'; ch++)
 {
-putchar(n);
-if (n != '9')
-{
-putchar(',');
-putchar(' ');
+putchar(ch);
 }
-}
-putchar('\n');
+putchar("\n");
 return (0);
 }
