@@ -1,0 +1,28 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+int n, z, x;
+for (n = '0'; n <= '7'; n++)
+for (z = '1'; z <= '8'; z++)
+for (x = '2'; x <= '9'; x++)
+{
+if ((n < z) & (z < x))
+{
+putchar(n);
+putchar(z);
+putchar(x);
+if (n != '7' || z != '8' || x != '9')
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+return (0);
+}
