@@ -14,7 +14,7 @@ if (n < z)
 {
 putchar(n);
 putchar(z);
-if (n != '9' || z != '9')
+if (n != '8' || z != '9')
 {
 putchar(',');
 putchar(' ');
