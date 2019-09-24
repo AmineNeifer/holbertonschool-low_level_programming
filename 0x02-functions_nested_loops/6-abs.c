@@ -11,5 +11,6 @@ if (r < 0)
 {
 return(-r);
 }
+else
 return (r);
 }
