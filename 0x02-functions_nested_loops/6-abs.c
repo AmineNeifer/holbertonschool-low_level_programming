@@ -9,7 +9,7 @@ int _abs(int r)
 int r;
 if (r < 0)
 {
-r = -r;
+r = (r * -1);
 }
 _putchar(r);
 return (r);
