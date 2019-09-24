@@ -2,15 +2,16 @@
 /**
  * _abs - prints the absolute value of an integer
  * @r: int type
- * Return: r if it is positive and -r if it is negative
+ * Return: int.
  */
 int _abs(int r)
 {
-int r;
-if (r < 0)
+if (r <= 0)
 {
 return (-r);
 }
 else
+{
 return (r);
+}
 }
