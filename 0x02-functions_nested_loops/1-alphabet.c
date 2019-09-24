@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - entry point
+ * print_alphabet - print alphabet
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 void print_alphabet(void)
 {
@@ -12,5 +12,4 @@ for (x = 'a'; x <= 'z'; x++)
 _putchar(x);
 }
 _putchar('\n');
-return (0);
 }
