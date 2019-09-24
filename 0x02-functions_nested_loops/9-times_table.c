@@ -17,6 +17,10 @@ if (((i * j) / 10) != 0)
 _putchar(((i * j) / 10) + '0');
 _putchar(((i * j) % 10) + '0');
 }
+else if (j == 0)
+{
+_putchar('0');
+}
 else
 {
 _putchar(' ');
