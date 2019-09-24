@@ -13,7 +13,7 @@ for (c = 0; c <= 59; c++)
 _putchar((n / 10) + '0');
 _putchar((n % 10) + '0');
 _putchar(':');
-_putchar((n / 10) + '0');
+_putchar((c / 10) + '0');
 _putchar((c % 10) + '0');
 _putchar('\n');
 }
