@@ -6,7 +6,10 @@
  */
 int print_last_digit(int n)
 {
-int r;
-r = n % 10;
-return (r);
+if (n > 9)
+{
+return (n % 10);
+}
+else
+return (n);
 }
