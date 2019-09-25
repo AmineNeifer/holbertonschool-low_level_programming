@@ -1,8 +1,7 @@
 #include "holberton.h"
-
 /**
  * times_table - pritns the 9 times table.
- *
+ * @n: int type
  * Return: Always 0.
  */
 void times_table(int n)
@@ -26,7 +25,7 @@ else if (((i * j) / 10) != 0)
 {
 _putchar(' ');
 _putchar(((i * j) / 10) + '0');
-_putchar(((i *j) % 10) + '0');
+_putchar(((i * j) % 10) + '0');
 }
 else
 {
