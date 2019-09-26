@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_numbers - checks for prints digits.
- * @i: int type
+ *
  * Return: none.
  */
 void print_numbers(void)
