@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_most_numbers - prints almost all digits.
- * @i: int type
+ *
  * Return: none.
  */
 void print_most_numbers(void)
