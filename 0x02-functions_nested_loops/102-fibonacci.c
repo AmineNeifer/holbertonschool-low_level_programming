@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
+ * main - pritn 50 1st fibonacci numbs.
  *
- *
- *
+ * Return: always 0.
  */
 int main(void)
 {
@@ -18,7 +18,7 @@ printf("%ld, ", s);
 i = j;
 j = s;
 }
- else
+else
 {
 s = i + j;
 printf("%ld\n", s);
