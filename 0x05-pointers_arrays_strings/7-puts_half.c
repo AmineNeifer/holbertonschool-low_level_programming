@@ -13,13 +13,13 @@ n += 1;
 if (n % 2 == 0)
 {
 s = n / 2;
-for (i = s; i <= n; i++)
+for (i = s; i < n; i++)
 _putchar(*(str + i));
 }
 else
 {
 s = (n - 1) / 2;
-for (j = s; j <= n; j++)
+for (j = s; j < n; j++)
 _putchar(*(str + j));
 }
 _putchar('\n');
