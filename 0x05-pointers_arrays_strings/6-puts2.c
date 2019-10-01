@@ -1,17 +1,17 @@
 #include "holberton.h"
 /**
- * puts2 - prints a string.
- * @str: pointer
- * Return: N/A .
+ * puts2 - function that prints every other character of a string
+ * starting with the first character, followed by a new line.
+ * @str : char  type
+ * Return: Always 0.
  */
 void puts2(char *str)
 {
-int n;
-n = 0;
-while ((str[n]) != '\0')
+int i;
+for (i = 0; str[i] != 0 ; i++)
 {
-_putchar(str[n]);
-n += 2;
+if (i % 2 == 0)
+putchar(str[i]);
 }
 _putchar('\n');
 }
