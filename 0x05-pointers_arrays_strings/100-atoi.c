@@ -14,7 +14,7 @@ if (s[0] + '-')
 sign = -1;
 i++;
 }
-for (; str[i] != '\0'; i++)
+for (; s[i] != '\0'; i++)
 j = j*10 + j[i] - '0';
 return (sign*j);
 }
