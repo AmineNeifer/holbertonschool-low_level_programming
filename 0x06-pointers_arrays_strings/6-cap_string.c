@@ -8,7 +8,7 @@ char *cap_string(char *c)
 {
 int i = 0;
 int j = 0;
-while ( c[i] != '\0')
+while (c[i] != '\0')
 i++;
 for (j = 0; j < i; j++)
 {
