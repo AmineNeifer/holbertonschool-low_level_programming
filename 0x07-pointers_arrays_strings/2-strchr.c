@@ -7,8 +7,11 @@
  */
 char *_strchr(char *s, char c)
 {
-int i;
-for (i = 0; s[i] != '\0'; i++)
+  int i, j;
+j = 0;
+while (s[j])
+j++;
+for (i = 0; i <= j; i++)
 {
 if (s[i] == c)
 break;
