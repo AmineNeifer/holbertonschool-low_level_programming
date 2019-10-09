@@ -7,12 +7,11 @@ int _sqrt_lol(int i, int j);
  */
 int _sqrt_recursion(int n)
 {
-if (n == 1)
-return (1);
-else if (n < 0)
+if (n < 0)
 return (-1);
-else
-return (_sqrt_lol(n, n - 1));
+if (n == 0 || n == 1)
+return (n);
+return (_sqrt_lol(n, 2));
 }
 /**
  * _sqrt_lol - function helping to find sqrt (n)
@@ -22,10 +21,9 @@ return (_sqrt_lol(n, n - 1));
  */
 int _sqrt_lol(int i, int j)
 {
-if (j < 1)
-return (-1);
-if (j * j == i)
-return (j);
-else
-return (_sqrt_lol(i, j - 1));
+if (j * j > i || j * j < 0)
+		return (-1);
+	if (j * j == i)
+		return (j);
+	return (_sqrt_lol(i, j + 1));
 }
