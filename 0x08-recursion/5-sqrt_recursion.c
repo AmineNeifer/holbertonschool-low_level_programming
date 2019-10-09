@@ -21,9 +21,9 @@ return (_sqrt_lol(n, 2));
  */
 int _sqrt_lol(int i, int j)
 {
-if (j * j > i || j * j < 0)
-		return (-1);
-	if (j * j == i)
-		return (j);
-	return (_sqrt_lol(i, j + 1));
+if ((j * j) > i || (j * j) < 0)
+return (-1);
+if (j * j == i)
+return (j);
+return (_sqrt_lol(i, j + 1));
 }
