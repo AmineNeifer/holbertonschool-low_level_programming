@@ -11,8 +11,8 @@ int is_palindrome(char *s)
 int i, n;
 n = 0;
 i = length(s);
-if (i == 0)
-return (0);
+if (s[1] == '\0')
+return (1);
 if (s[n] == s[i])
 return (palindrome_lol(s, n + 1, i - 1));
 else
