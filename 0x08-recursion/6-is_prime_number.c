@@ -9,7 +9,7 @@ int is_prime_number(int n)
 {
 if (n <= 1)
 return (0);
-return (is_prime_helper(n, n - 1));
+return (prime_lol(n, n - 1));
 }
 /**
  * prime_lol - helper to check if n is prime.
@@ -23,5 +23,5 @@ if (j == 1)
 return (1);
 if (i % j == 0)
 return (0);
-return (is_prime_helper(i, j - 1));
+return (prime_lol(i, j - 1));
 }
