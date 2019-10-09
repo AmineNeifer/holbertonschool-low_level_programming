@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * 
- * 
- * 
+ * _puts_recursion - puts function built using recursion.
+ * @s: string.
+ * Return: N/A.
  */
 void _puts_recursion(char *s)
 {
