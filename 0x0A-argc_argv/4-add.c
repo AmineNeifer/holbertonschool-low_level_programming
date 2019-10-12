@@ -13,10 +13,10 @@ int sum = 0, i;
 unsigned int k;
 if (argc == 1)
 {
-printf ("0\n");
+printf("0\n");
 return (0);
 }
-else 
+else
 {
 for (i = 1; i < argc; i++)
 {
