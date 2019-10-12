@@ -20,7 +20,7 @@ else
 {
 for (i = 1; i < argc; i++)
 {
-for (k = 0; k < strlen(argv[i]); k++)
+for (k = 0; k <= strlen(argv[i]); k++)
 {
 if (argv[i][k] <= '0' || argv[i][k] >= '9')
 {
