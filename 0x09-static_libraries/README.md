@@ -1,1 +1,1 @@
-holberton static lib
+static library project
