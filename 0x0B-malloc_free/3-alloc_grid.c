@@ -20,6 +20,12 @@ return (0);
 for (i1 = 0; i1 < height; i1++)
 {
 p[i1] = malloc(sizeof(int) * width);
+if (p[i1] == NULL)
+{
+free(p[i1]);
+free(p);
+return (0);
+}
 for (i2 = 0; i2 < width; i2++)
 p[i1][i2] = 0;
 }
