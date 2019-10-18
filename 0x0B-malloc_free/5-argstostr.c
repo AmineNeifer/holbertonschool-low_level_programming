@@ -25,7 +25,7 @@ if (p == NULL)
 return (0);
 for (i = 0; i < ac; i++)
 {
-for (j = 0; j < (_strlen(av[i])); j++)
+for (j = 0; j <= (_strlen(av[i])); j++)
 {
 p[k] = av[i][j];
 k++;
@@ -47,5 +47,6 @@ int _strlen(char *ch)
 int i = 0;
 while (ch[i])
 i++;
+i--;
 return (i);
 }
