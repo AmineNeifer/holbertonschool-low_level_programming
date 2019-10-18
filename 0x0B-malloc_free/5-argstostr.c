@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "holberton.h"
+int _strlen(char *ch);
+
 /**
  * argstostr - concatenate arguments.
  * @ac: arg counter.
@@ -11,20 +12,20 @@
 char *argstostr(int ac, char **av)
 {
 int i, a = 0, k = 0;
-unsigned int j;
+int j;
 char *p;
 if (ac == 0 || av == 0)
 return (0);
 for (i = 0; i < ac; i++)
 {
-a += strlen(av[i]);
+a += _strlen(av[i]);
 }
 p = malloc(a);
 if (p == NULL)
 return (0);
 for (i = 0; i < ac; i++)
 {
-for (j = 0; j < (strlen(av[i])); j++)
+for (j = 0; j < (_strlen(av[i])); j++)
 {
 p[k] = av[i][j];
 k++;
@@ -33,4 +34,18 @@ p[k] = '\n';
 k++;
 }
 return (p);
+}
+
+/**
+ * _strlen - counts number of chars.
+ * @ch: string.
+ * Return: pointer i.
+ */
+
+int _strlen(char *ch)
+{
+int i = 0;
+while (ch[i])
+i++;
+return (i);
 }
