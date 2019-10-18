@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "holberton.h"
+/**
+ * argstostr - concatenate arguments.
+ * @ac: arg counter.
+ * @av: arg vector.
+ * Return: pointer p.
+ */
 char *argstostr(int ac, char **av)
 {
 int i, a = 0, k = 0;
