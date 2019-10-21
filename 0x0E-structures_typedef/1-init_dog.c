@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dog.h"
 /**
  * init_dog - intitialize a dog information.
  * @d: 
@@ -11,7 +11,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (d == 0)
 return;
-dog->name = name;
-dog->age = age;
-dog->owner = owner;
+d->name = name;
+d->age = age;
+d->owner = owner;
 }
