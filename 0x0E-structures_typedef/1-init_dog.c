@@ -1,7 +1,7 @@
 #include "dog.h"
 /**
  * init_dog - intitialize a dog information.
- * @d: 
+ * @d: variable.
  * @name: its name.
  * @age: its age.
  * @owner: its owner.
