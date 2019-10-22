@@ -3,8 +3,11 @@
 #include "dog.h"
 
 /**
-  * print_dog - prints a structure dog
-  * @d: Variable.
+  * new_dog - adding a new dog
+  * @name: name of the new dog.
+  * @age: age of new dog.
+  * @owner: owner of new dog.
+  * Return: p.
   */
 
 dog_t *new_dog(char *name, float age, char *owner)
