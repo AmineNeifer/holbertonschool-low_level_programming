@@ -5,6 +5,7 @@
  * @name: name of dog.
  * @age: age of the dog.
  * @owner: who is the owner of the dog.
+ * Description - not needed.
  */
 typedef struct dog
 {
