@@ -26,7 +26,8 @@ p->name = malloc(i);
 
 if (p->name == NULL)
 {
-
+free(p->name);
+free(p);
 return (0);
 }
 for (n = 0; n < i; n++)
@@ -37,7 +38,9 @@ p->owner = malloc(j);
 
 if (p->owner == NULL)
 {
-
+free(p->name);
+free(p->owner);
+free(p);
 return (0);
 }
 for (n = 0; n < j; n++)
