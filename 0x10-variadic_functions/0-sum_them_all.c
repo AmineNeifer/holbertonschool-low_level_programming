@@ -2,12 +2,12 @@
 #include <stdarg.h>
 /**
  * sum_them_all - calculating the sum of ints
- * @n: a constant
- * return: the sum of int arguments.
+ * @n: numb of args.
+ * Return: the sum of int arguments.
  */
 int sum_them_all(const unsigned int n, ...)
 {
-if (n == 0) 
+if (n == 0)
 return (0);
 va_list lis;
 int sum;
