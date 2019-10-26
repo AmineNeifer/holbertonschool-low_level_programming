@@ -57,6 +57,11 @@ printf("%c", va_arg(arg, int));
  */
 void p_string(va_list arg)
 {
+if (va_arg(arg, char *) == 0)
+{
+printf("(nil)");
+return;
+}
 printf("%s", va_arg(arg, char *));
 }
 /**
@@ -66,11 +71,7 @@ printf("%s", va_arg(arg, char *));
  */
 void p_float(va_list arg)
 {
-if (va_arg(arg, char *) == 0)
-{
-printf("(nil)");
-return;
-}
+
 printf("%f", va_arg(arg, double));
 }
 /**
