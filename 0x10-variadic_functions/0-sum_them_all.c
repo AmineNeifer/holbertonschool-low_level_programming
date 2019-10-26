@@ -12,6 +12,8 @@ va_list lis;
 int sum;
 unsigned int i;
 sum = 0;
+if (n == 0)
+return (0);
 va_start(lis, n);
 for (i = 0; i < n; i++)
 sum += va_arg(lis, unsigned int);
