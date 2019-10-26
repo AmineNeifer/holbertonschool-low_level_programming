@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 #include <stdarg.h>
 /**
  * sum_them_all - calculating the sum of ints
@@ -7,8 +8,6 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-if (n == 0)
-return (0);
 va_list lis;
 int sum;
 unsigned int i;
