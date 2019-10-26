@@ -18,7 +18,9 @@ if (i == n - 1)
 printf("%d\n", va_arg(list, int));
 else
 {
-if (separator != NULL)
+if (separator == NULL)
+printf("%d", va_arg(list, int));
+else
 printf("%d%s", va_arg(list, int), separator);
 }
 }
