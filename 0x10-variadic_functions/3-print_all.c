@@ -10,17 +10,18 @@
  */
 void print_all(const char * const format, ...)
 {
-va_list arg;
-va_start(arg, format);
-lol mystruct[] = {
+    lol mystruct[] = {
 {'c', *p_char},
 {'i', *p_int},
 {'s', *p_string},
 {'f', *p_float},
 {0, NULL}
 };
+va_list arg;
 int j, i = 0;
 char *sep = "";
+va_start(arg, format);
+
 while (format && format[i])
 {
 j = 0;
