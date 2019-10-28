@@ -5,6 +5,7 @@
 /**
  * print_all - print whatever type is the argument
  * @format: format of the next argument.
+ * @...: list of args.
  * Return: void.
  */
 void print_all(const char * const format, ...)
