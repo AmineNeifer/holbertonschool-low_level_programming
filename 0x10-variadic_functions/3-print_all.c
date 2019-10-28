@@ -10,7 +10,7 @@
  */
 void print_all(const char * const format, ...)
 {
-    lol mystruct[] = {
+lol mystruct[] = {
 {'c', *p_char},
 {'i', *p_int},
 {'s', *p_string},
