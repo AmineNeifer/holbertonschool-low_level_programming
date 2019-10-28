@@ -17,4 +17,8 @@ typedef struct lol
 char type;
 void (*func)();
 } lol;
+void p_float(va_list);
+void p_char(va_list);
+void p_string(va_list);
+void p_int(va_list);
 #endif
