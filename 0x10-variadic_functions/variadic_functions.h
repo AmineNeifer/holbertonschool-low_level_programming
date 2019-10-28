@@ -15,10 +15,10 @@ void print_all(const char * const format, ...);
 typedef struct lol
 {
 char type;
-void (*func)();
+void (*func)(va_list arg);
 } lol;
-void p_float(va_list);
-void p_char(va_list);
-void p_string(va_list);
-void p_int(va_list);
+void p_float(va_list arg);
+void p_char(va_list arg);
+void p_string(va_list arg);
+void p_int(va_list arg);
 #endif
