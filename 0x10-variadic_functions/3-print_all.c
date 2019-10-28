@@ -1,10 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-void p_float(void);
-void p_char(void);
-void p_string(void);
-void p_int(void);
+
 /**
  * print_all - print whatever type is the argument
  * @format: format of the next argument.
@@ -23,10 +20,10 @@ lol mystruct[] = {
 };
 int j, i = 0;
 char *sep = "";
-while (format[i] != '\0' && format != NULL)
+while (format && format[i])
 {
 j = 0;
-while (j < 4)
+while (j < 5)
 {
 if (format[i] == mystruct[j].type)
 {
@@ -57,13 +54,12 @@ printf("%c", va_arg(arg, int));
  */
 void p_string(va_list arg)
 {
-if (va_arg(arg, char *) == 0)
-{
-printf("(nil)");
-return;
+char *str = va_arg(arg, char *);
+if (str == NULL)
+str = "(nil)";
+printf("%s", str);
 }
-printf("%s", va_arg(arg, char *));
-}
+
 /**
  * p_float - print float.
  * @arg: argument.
