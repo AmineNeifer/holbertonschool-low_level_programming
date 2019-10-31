@@ -19,7 +19,6 @@ else
 printf("[%d] %s\n", h->len, h->str);
 l++;
 }
-
 if (h->next != NULL)
 return (l + print_list(h->next));
 return (l);
