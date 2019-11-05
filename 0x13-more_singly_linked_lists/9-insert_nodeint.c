@@ -25,25 +25,19 @@ if (idx == 0)
 {
 new->next = (*head)->next;
 *head = new;
+return (new);
 }
-while (current != NULL && current->next != NULL && i < idx - 1)
+while (current != NULL && i < idx - 1)
 {
 current = current->next;
 i++;
-}
-
-if (i < idx - 1)
-return (NULL);
-
-if (current->next == NULL)
+if (current == NULL)
 {
-current->next = new;
-new->next = NULL;
+    free(new);
+    return (NULL);
 }
-else
-{
+}
 new->next = current->next;
 current->next = new;
-}
 return (new);
 }
