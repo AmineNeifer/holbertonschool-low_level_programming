@@ -10,8 +10,8 @@ size_t print_listint(const listint_t *h)
 {
 size_t numb = 0;
 if (h == NULL)
-return (0);
-while (h != 0)
+return (NULL);
+while (h != NULL)
 {
 printf("%d\n", h->n);
 numb++;
