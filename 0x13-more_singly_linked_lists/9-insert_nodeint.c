@@ -23,8 +23,8 @@ return (NULL);
 new->n = n;
 if (idx == 0)
 {
-    new->next = (*head)->next;
-    *head = new;
+new->next = (*head)->next;
+*head = new;
 }
 while (current != NULL && current->next != NULL && i < idx - 1)
 {
