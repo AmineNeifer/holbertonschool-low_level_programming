@@ -14,7 +14,9 @@ unsigned int i = 0;
 listint_t *new;
 new = malloc(sizeof(listint_t));
 if (new == NULL)
+{
 return (NULL);
+}
 listint_t *current = *head;
 if (head == NULL)
 return (NULL);
