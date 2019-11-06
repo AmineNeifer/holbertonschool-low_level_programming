@@ -20,7 +20,12 @@ return (NULL);
 }
 if (head == NULL)
 return (NULL);
+
+if (*head == NULL)
+*head = new;
+
 new->n = n;
+
 if (idx == 0)
 {
 new->next = (*head)->next;
@@ -33,8 +38,8 @@ current = current->next;
 i++;
 if (current == NULL)
 {
-    free(new);
-    return (NULL);
+free(new);
+return (NULL);
 }
 }
 new->next = current->next;
