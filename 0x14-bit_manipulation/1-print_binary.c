@@ -5,12 +5,12 @@
  * @n: unsigned integer.
  * Return: N/A.
  */
-void print(unsigned int n)
+void print(unsigned long int n)
 {
 if (n != 0)
 {
 print(n >> 1);
-if ((n & 1))
+if (n & 1)
 _putchar('1');
 else
 _putchar('0');
