@@ -16,7 +16,7 @@ while (needle[len1])
 len1++;
 for (i = 0; i < len; i++)
 {
-if (checking(haystack, needle, i) == 0)
+if (checking(haystack, needle, i, len1) == 0)
 return (haystack + i);
 }
 return (NULL);
@@ -26,15 +26,17 @@ return (NULL);
  * @haystack: string.
  * @needle: substring.
  * @i: int.
+ * @len: int.
  * Return: 1 if fails and 0 if succeed
  */
-int checking(char *haystack, char *needle, int i)
+int checking(char *haystack, char *needle, int i, int len)
 {
-int c;
-for (c = 0; haystack[i + c]; c++)
+int c = 0;
+while (haystack[i + c] && c < len)
 {
 if (needle[c] != haystack[c + i])
 return (1);
+c++;
 }
 return (0);
 }
