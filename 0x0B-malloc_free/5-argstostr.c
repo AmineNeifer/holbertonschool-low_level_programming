@@ -20,7 +20,7 @@ for (i = 0; i < ac; i++)
 {
 a += _strlen(av[i]);
 }
-p = malloc(sizeof(char) * a);
+p = malloc(a + 1 + ac);
 if (p == NULL)
 return (0);
 for (i = 0; i < ac; i++)
@@ -33,6 +33,7 @@ k++;
 p[k] = '\n';
 k++;
 }
+p[k] = '\0';
 return (p);
 }
 
