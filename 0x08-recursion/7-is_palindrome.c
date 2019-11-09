@@ -28,6 +28,8 @@ return (0);
  */
 int palindrome_lol(char *s, int n, int i)
 {
+if (s[n] != s[i])
+return (0);
 if (n == i || i - n == 1)
 return (1);
 if (s[n] == s[i])
