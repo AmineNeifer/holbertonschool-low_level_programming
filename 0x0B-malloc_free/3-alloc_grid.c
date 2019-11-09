@@ -23,6 +23,7 @@ if (p[i1] == NULL)
 {
 for (i2 = 0; i2 < width; i2++)
 free(p[i1] + i2);
+free(p);
 return (0);
 }
 for (i2 = 0; i2 < width; i2++)
