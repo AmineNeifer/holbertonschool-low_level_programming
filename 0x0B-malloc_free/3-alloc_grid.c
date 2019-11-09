@@ -19,7 +19,7 @@ if (p == NULL)
 return (0);
 for (i1 = 0; i1 < height; i1++)
 {
-p[i1] = malloc(sizeof(int *) * width);
+p[i1] = malloc(sizeof(int) * width);
 if (p[i1] == NULL)
 {
 for (i2 = 0; i2 < height; i2++)
