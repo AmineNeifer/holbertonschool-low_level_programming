@@ -9,8 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-int sum = 0, i;
-unsigned int k;
+int i;
+unsigned int k, sum = 0;
 if (argc == 1)
 {
 printf("0\n");
@@ -22,7 +22,7 @@ for (i = 1; i < argc; i++)
 {
 for (k = 0; k < strlen(argv[i]); k++)
 {
-if (argv[i][k] <= '0' || argv[i][k] >= '9')
+if (argv[i][k] < '0' || argv[i][k] >= '9')
 {
 printf("Error\n");
 return (1);
