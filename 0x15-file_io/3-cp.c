@@ -22,8 +22,13 @@ exit(97);
 }
 fd2 = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 0644);
 fd = open(av[1], O_EXCL | O_RDONLY);
+if (fd == -1)
+{
+dprintf(STDOUT_FILENO, "Error: Can't read to %s\n", av[1]);
+exit(98);
+}
 r = read(fd, buf, count);
-if (fd == -1 || r == -1)
+if (r == -1)
 {
 dprintf(STDOUT_FILENO, "Error: Can't read to %s\n", av[1]);
 exit(98);
@@ -46,5 +51,6 @@ if (cl1 == -1)
 dprintf(STDOUT_FILENO, "Error: Can't close fd %d\n", fd2);
 exit(100);
 }
+free(buf);
 return (0);
 }
