@@ -27,7 +27,7 @@ fd = open(av[1], O_EXCL | O_RDONLY);
 r = read(fd, buf, count);
 if (fd == -1 || r == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from %s\n", av[1]);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 exit(98);
 }
 w = write(fd2, buf, r);
