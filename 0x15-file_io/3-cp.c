@@ -13,7 +13,7 @@
  */
 int main(int ac, char **av)
 {
-int fd, fd2, count = 1024, r, w, cl, cl1;
+int fd, fd2, count = 5000, r, w, cl, cl1;
 char *buf = malloc(5000);
 if (buf == NULL)
 return (0);
