@@ -39,13 +39,13 @@ exit(99);
 cl = close(fd);
 if (cl == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd\n", fd);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 exit(100);
 }
 cl1 = close(fd2);
 if (cl1 == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd\n");
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
 exit(100);
 }
 free(buf);
