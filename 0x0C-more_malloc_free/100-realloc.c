@@ -1,6 +1,13 @@
 #include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
+/**
+ * _realloc - same as the same realloc funct.
+ * @ptr: old pointer.
+ * @old_size: old size of old pointer.
+ * @new_size: new size of new pointer.
+ * Return: new pointer.
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *new;
