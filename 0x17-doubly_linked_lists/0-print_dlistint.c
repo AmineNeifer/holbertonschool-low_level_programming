@@ -9,11 +9,6 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 size_t num = 0;
-if (h == NULL)
-{
-printf("0\n");
-return (0);
-}
 while (h != NULL)
 {
 num++;
