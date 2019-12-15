@@ -12,6 +12,8 @@ dlistint_t *current = head;
 int i = head->n;
 if (head == NULL)
 return (0);
+if (head && head->next == NULL)
+return (i);
 while (current && current->next)
 {
 current = current->next;
