@@ -44,7 +44,7 @@ new->prev = current->prev;
 current->prev->next = new;
 current->prev = new;
 }
-else 
+else
 return (NULL);
 return (new);
 }
