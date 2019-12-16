@@ -14,12 +14,7 @@ unsigned int i = 0;
 dlistint_t *current = *h;
 dlistint_t *new;
 if (*h == NULL && idx == 0)
-{
-(*h)->n = n;
-(*h)->prev = NULL;
-(*h)->next = NULL;
-return (*h);
-}
+return (add_dnodeint(h, n));
 else if (*h == NULL && idx != 0)
 return (NULL);
 new = malloc(sizeof(dlistint_t));
