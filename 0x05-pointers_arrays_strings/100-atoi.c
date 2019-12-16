@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * atoi - transform char to int.
- *
+ * @s: array to convert
  * Return - integer.
  */
 int _atoi(char *s)
