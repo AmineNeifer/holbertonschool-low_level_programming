@@ -2,7 +2,7 @@
 /**
  * _atoi - transform char to int.
  * @s: array to convert
- * Return - integer.
+ * Return: integer.
  */
 int _atoi(char *s)
 {
