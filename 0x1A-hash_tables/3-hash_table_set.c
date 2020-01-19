@@ -7,7 +7,7 @@
  * @ht: our hash table.
  * @key: string type.
  * @value: value for our key , "key:value".
- * Return: 1 if succeeded, 0 otherwise.
+* Return: 1 if succeeded, 0 otherwise.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -26,15 +26,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	next_node->value = strdup(value);
 	next_node->next = NULL;
 
-	if (ht->array[index] != NULL)
-	{
-		while (ht->array[index]->next != NULL)
-			ht->array[index] = ht->array[index]->next;
-		ht->array[index]->next = next_node;
-	}
-	else
-	{
-		ht->array[index] = next_node;
-	}
+	if (ht->array[index])
+		next_node->next = ht->array[index];
+	ht->array[index] = next_node;
 	return (1);
 }
