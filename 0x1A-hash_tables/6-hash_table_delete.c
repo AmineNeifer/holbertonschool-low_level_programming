@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "hash_tables.h"
 /**
- * hash_table_deleter - deleter and free the hash table.
+ * hash_table_delete - deleter and free the hash table.
  * @ht: pointer to the head.
  * Return: 1 on success, 0 otherwise.
  */
