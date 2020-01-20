@@ -1,5 +1,10 @@
 #include <stdlib.h>
 #include "hash_tables.h"
+/**
+ * hash_table_deleter - deleter and free the hash table.
+ * @ht: pointer to the head.
+ * Return: 1 on success, 0 otherwise.
+ */
 void hash_table_delete(hash_table_t *ht)
 {
 	hash_node_t *current;
