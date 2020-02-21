@@ -1,0 +1,6 @@
+#compiler to be used
+CC = gcc
+#the .c files
+SRC = holberton.c main.c
+all :
+	$(CC) $(SRC) -o holberton
