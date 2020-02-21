@@ -1,0 +1,10 @@
+#compiler to be used
+CC = gcc
+#the .c files
+SRC = holberton.c main.c
+#the .o files
+OBJ = $(SRC:%.c=%.o)
+#name of the executable
+NAME = holberton
+all :
+	$(CC) $(OBJ) -c $(SRC) -o $(NAME)
