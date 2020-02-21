@@ -7,4 +7,4 @@ OBJ = $(SRC:%.c=%.o)
 #name of the executable
 NAME = holberton
 all :
-	$(CC) $(OBJ) -c $(SRC) -o $(NAME)
+	$(CC) -c $(SRC) -o $(NAME) $(OBJ)
