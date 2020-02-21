@@ -6,5 +6,5 @@ SRC = holberton.c main.c
 OBJ = $(SRC:%.c=%.o)
 #name of the executable
 NAME = holberton
-all :
-	$(CC) -c $(SRC) -o $(NAME) $(OBJ)
+all: $(OBJ)
+	$(CC) $(OBJ) -c $(SRC) -o $(NAME) 
