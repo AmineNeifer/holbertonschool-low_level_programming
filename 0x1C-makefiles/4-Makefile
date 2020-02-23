@@ -1,0 +1,24 @@
+# compiler to use
+CC = gcc
+# .c files
+SRC = holberton.c main.c
+# .o files
+OBJ = $(SRC:%.c=%.o)
+# name of executable
+NAME = holberton
+# program to delete files
+RM = rm -f
+# compiler flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) *.o
+
+fclean: clean oclean
+
+re: fclean all
