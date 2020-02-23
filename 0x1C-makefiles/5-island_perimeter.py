@@ -6,13 +6,13 @@ def surrounding(grid, i, j):
     """ calculates number of surroundes 1's"""
     surr = 0
 
-    if i < len(grid) and grid[i + 1][j] == 1:
+    if i < len(grid) - 1 and grid[i + 1][j] == 1:
         surr += 1
 
     if i > 0 and grid[i - 1][j] == 1:
         surr += 1
 
-    if j < len(grid[0]) and grid[i][j + 1] == 1:
+    if j < len(grid[0]) - 1 and grid[i][j + 1] == 1:
         surr += 1
 
     if j > 0 and grid[i][j - 1] == 1:
