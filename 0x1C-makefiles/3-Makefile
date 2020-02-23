@@ -9,7 +9,6 @@ NAME = holberton
 # RM: the program to delete files
 RM = rm -f
 
-.PHONY: all clean oclean fclean re
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
