@@ -3,7 +3,7 @@ CC = gcc
 # SRC: .c files
 SRC = holberton.c main.c
 # OBJ: .o files
-OBJ = $(SRC: %.c=%.o)
+OBJ = $(SRC:%.c=%.o)
 # NAME: name of the executable
 NAME = holberton
 # RM: the program to delete files
