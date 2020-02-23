@@ -8,4 +8,6 @@ def island_perimeter(grid):
         for j in i:
             if j == 1:
                 sum_of_1 += 1
+    if sum_of_1 == 0:
+        return 0
     return (2 * sum_of_1 + 2)
