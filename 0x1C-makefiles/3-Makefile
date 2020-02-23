@@ -1,7 +1,7 @@
 # CC: compiler to use
 CC = gcc
 # SRC: .c files
-SRC = main.c holberton.c
+SRC = holberton.c main.c
 # OBJ: .o files
 OBJ = $(SRC: %.c=%.o)
 # NAME: name of the executable
